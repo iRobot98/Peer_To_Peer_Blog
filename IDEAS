@@ -1,0 +1,85 @@
+1. 3 Subsytems:
+    a. Webclient (both console and browser interfaces:
+        - console: spins up a node instance and preloads data;
+        - browser: spins up a client self-contained webapp;
+    ):
+        -> goal: to be able to recieve and interact with the Data in processed/interactive format
+        ==> end-to-end encryption, strip meta-data, Oauth,
+
+    b. P2P_Backend:
+        - same simple database and site-hosting, with Tor/Blockchain addressing/utilisation,
+        - every app-holder has/can run a P2P_Backend for their data, and co-host other's data for a fee:
+            -> quid-pro-quo: (each user/host carries certain types of data depending on network/system efficiencies)
+            -> paid-subscription: (anyone can offer hosting services for a fee on their personal device(s))
+            -> self-hosting (my data my device, 2 sets of data:
+                - temporary storage (lasts 24h, 7 days, 30 days),
+                - permanent storage (lasts 1yr, 5yrs)),
+                - self-hosting allows one to control data access 
+            )
+        - backend can also host common utilities/software for Torrent-like performance:
+            - everyone hosts common data, new clients to the network just send a peer request and receive from nearest hosts
+            - encryption allows 'common knowledge':
+                - popular/recent info can be re-served by (a) 2nd(ry) client-host pair,
+                - network data can be collected and shared distributedly for faster protocols/routing,
+                - multi-downloading streams means faster serving speeds
+
+        - blockchain data layout:
+            1. Private and Public Database/Domain (
+                - a meme I post is mine, if it is reshared it is public-domain copyrighted, if I delete it from my phone/account, only the public-domain copy remains,
+                - time limited vid.s/pic.s carry-over their lifespan if shared/copied,
+                - can screenshot, can't download/copy - not with the public/open-source client)
+            2. Single creator, multiple
+
+    c. P2P_Handshake:
+        - pure end-to-end connectivity service:
+            1. collect network information, 
+            2. process it for patterns/demands/load-bearing, 
+            3. support/piggy-back on-going/re-forming/forming network connects and data-transfers,
+            4. Block-chain transparency log:
+                - identify IP's and record datahashes to identify interferences/failures/intrusions,
+                - ping other Servers and record/publish connectivity data (to identify surveillance/interference),
+                - Evented-API/Database that's distributed among clients and hashed,
+                - 2nd-layer end-to-end encryption, and proxy-bundling, for cross-border/cross-network obfuscation
+        => keep echoes of common/frequent data/connections:
+            1. ease's setting up new connects
+            2. sets-up redudancy in case of failure/attack (alternate routing)
+            3. sub-copy exists in the normal back-end, to serve as tertiary data-routes in normal overload/underload situations
+        => P2P_Handshakes allow users to offer hosting services at a publicly-known rate/fee:
+            (with transparent market-data on device abilities)
+            - ultimately, it's possible to identify unique information about users,
+            - the goal is to create as much mud-in-the-water to be functionally untraceable to unique individuals (except by personally identifying information they intentionally offer - per event)
+            -> public-market-place infrastructure also allows host to offer/perform e-commerce services (eg. Drop-shipping, Auctioneering)
+
+2. Special terms:
+    - Encryption:
+        -> both: data obfuscation and data compression
+        -> 2 levels: end-to-end between BackEnds (public market-place), and end-to-end between Handshakes (public routing/accountability)
+        -> strip metadata: at 2 levels, Back-ends strip personal data from media transferred/shared/published, Handshakes strip location/specific-source data from Network connections to create anonymity layer
+            --> that's why Handshakes keep track of nearby Backends for fast-serving, but strips Identification-information for inter-person/device communication
+            --> besides username, password, and the public Oauth: 
+                - everything else should be anonymous/personal,
+                - person-identifying data should/could be a marketable commodity, but at-will, not 'by-right'
+
+    - Server(s):
+        1. Mail server - self-hosting for email-protocols and data,
+        2. Web/Account(s) server - self-hosting for personal data and websites,
+        3. FTP Server - self-hosting for data storage/access
+
+    - Multithreading:
+        1. Containerisation: each subprocess (ie. full process/program aiding the main process/program) running on an independent thread con-currently for max-efficiency, with full OS command/utilities access - microservice architecture for responsibility segregation,
+        2. Goroutines/Microroutines: function-level operations spun into multiple threads/&co-routines (with as little overhead as necessary) for fast/efficient multicore use, as well as taking advantage of physical networking effects (ie, asynchronicity, latency, reconnection) or to improve data-processing efficiency
+
+    - Core Ideas:
+        -> redundancy
+        -> security 
+        -> free information accessibility/exchange
+
+3. Potentials/Visions:
+    Means:    
+        1. People using their PC's downtime/threads to run Handshake servers and Public hosts,
+        2. People creating mini-server-farms to scale up their service-delivery (platform/software allows cost-efficient scaling),
+        3. People using their phones/devices (PC's, TV's, Console's, etc) to host personal accounts/information (For full/better access control),
+    Second:  
+        4. Super-distributed nature to be redundant/stable, scaleable, immune to DDOS attacks, inbuilt VPN and Blockchain
+    Main:   
+        5. Truly free/fair/open market for Information, Social interactions/organisig, and Business/Marketplace Trade
