@@ -1,0 +1,27 @@
+Point of order:
+    TDD (Test Driven Development): write tests first, then fix to meet them, refine tests to refine code
+
+1. VPN Subsystem:
+    - OpenVPN
+    - Tor Proxy/Trampoline
+
+2. P2P Subsystem:
+    - Torrent subsystem and node-net
+    - file persistence through anonymous distributed encrypted cohosting
+
+3. SuperServer Subsystem:
+    - multiple internet servers (individual user): 
+        website-hosting server, mail server, ftp server, media streaming server, SMS Server, VOIP server
+    - Database Server (cloud-mimmicking database):
+        massively distributed cloud database using users as storage and processing nodes, smart contract financing
+
+4. Scripting API:
+    - Containerisation API
+    - Code/Software distribution manager (eg NPM, Git, CrateIO)
+
+5. APP Layer:
+    a. superSocial (open social media protocol)
+    b. superCoin (digital currency wallet and ledger system)
+    c. superInvestment (P2P Lending, NFT Balance Sheet system)
+    d. superOrg (smart contract coordination)
+    e. App API

@@ -53,7 +53,7 @@ Applications: superCoin (personal virtual banking), superSocial (personal inform
    1. WWW-net VPN, superOrg-modifiable VPN overlay)
 2. Peer-to-Peer File Transfer NetworK
    1. Network support server (P2P Leecher, Onion/VPN trampoline),
-   2. User facing server (mail server, ftp server, media streaming server, VOIP server)
+   2. User facing server (mail server, ftp server, media streaming server, SMS Server, VOIP server)
 3. Opensource InMemory Evented (scriptable) DBMS
    1. backbone for apps, capable of multiple simultaneous DBs
 4. Scripting-Processing API
